@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>SSearch</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png">
+    </head>
+    <body>
+        <a href="https://www.youtube.com"><img src ="youtube.png" id="shortcuts" draggable = 'false'></a>
+        <a href="https://www.facebook.com"><img src ="facebook.png" id="shortcuts1" draggable = 'false'></a>
+        <div class="righttoolkit">
+            <a href="https://open.spotify.com"><img src ="spotify.png" id="shortcuts2" draggable = 'false'></a>
+            <a href="https://web.whatsapp.com"><img src ="whatsapp.png" id="shortcuts2" draggable = 'false'></a>
+            <a href="https://mail.google.com"><img src ="gmail.png" id="shortcuts2" draggable = 'false'></a>
+            <a href="https://www.instgram.com"><img src ="instgram.png" id="shortcuts2" draggable = 'false'></a>
+            <a href="https://www.twitter.com"><img src ="twitter.png" id="shortcuts2" draggable = 'false'></a>
+        </div>
+    <div class="sui">
+        <br>
+        <h1 style="color:red;">SSearch</h1>
+        <input type="text" id="search" placeholder="  Google Here" class="query" value="">
+        <br><br><br>
+        <button class="searchbtn" id="searchbtn">Search</button>
+    </div>
+    </center>
+    </body>
+    <script>
+        let query = document.querySelector(".query");
+        let searchbtn = document.querySelector(".searchbtn");
+
+        searchbtn.onclick = function(){
+            let url = 'https://www.google.com/search?q='+ query.value;
+            window.open(url);
+        }
+    </script>
+</html>
